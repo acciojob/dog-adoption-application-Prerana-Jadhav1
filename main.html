@@ -1,16 +1,82 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Adoption Application</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="container">
+        <div class="header">
+            <h1>🐕 Dog Adoption Application</h1>
+            <p>Help us find the perfect furry companion for you!</p>
+        </div>
 
+        <form class="adoption-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    placeholder="Name" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input 
+                    type="text" 
+                    id="phone" 
+                    placeholder="Phone Number" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input 
+                    type="text" 
+                    id="address" 
+                    placeholder="Address" 
+                    required
+                >
+            </div>
+
+            <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                    <input 
+                        type="checkbox" 
+                        id="checkbox" 
+                        value="Have you ever lived with a Dog before?"
+                    >
+                    <span>Have you ever lived with a Dog before?</span>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="multiSelect">Please select your preferred breeds:</label>
+                <select id="multiSelect" multiple size="5" required>
+                    <option value="labrador">Labrador Retriever</option>
+                    <option value="german-shepherd">German Shepherd</option>
+                    <option value="golden-retriever">Golden Retriever</option>
+                    <option value="bulldog">Bulldog</option>
+                    <option value="beagle">Beagle</option>
+                    <option value="poodle">Poodle</option>
+                    <option value="husky">Siberian Husky</option>
+                </select>
+                <small>Hold Ctrl (Windows) or Cmd (Mac) to select multiple breeds</small>
+            </div>
+
+            <div class="form-group">
+                <input 
+                    type="submit" 
+                    id="submit" 
+                    value="Submit"
+                >
+            </div>
+        </form>
+    </div>
 </body>
-
 </html>
